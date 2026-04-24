@@ -1,0 +1,19 @@
+{
+  "toss": {
+    "payment": {
+      "loadingWidget": "토스페이먼츠 위젯을 불러오는 중…",
+      "pay": "결제하기"
+    },
+    "success": {
+      "confirming": "결제 확인 중…",
+      "title": "결제 완료",
+      "message": "토스페이먼츠 결제가 확인되었습니다.",
+      "dashboard": "대시보드로 돌아가기"
+    },
+    "cancel": {
+      "title": "결제 취소됨",
+      "message": "요금이 청구되지 않았습니다.",
+      "retry": "다시 시도"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "toss": {
+    "payment": {
+      "loadingWidget": "Loading Toss widget…",
+      "pay": "Pay"
+    },
+    "success": {
+      "confirming": "Confirming payment…",
+      "title": "Payment received",
+      "message": "Your Toss payment has been confirmed.",
+      "dashboard": "Back to dashboard"
+    },
+    "cancel": {
+      "title": "Payment cancelled",
+      "message": "No charge was made.",
+      "retry": "Try again"
+    }
+  }
+}
