@@ -1,13 +1,25 @@
 <template>
   <div class="toss-payment">
-    <div v-if="loading" class="toss-payment__loading">
+    <div
+      v-if="loading"
+      class="toss-payment__loading"
+    >
       <p>{{ $t('toss.payment.loadingWidget') }}</p>
     </div>
-    <div v-else-if="error" class="toss-payment__error">
+    <div
+      v-else-if="error"
+      class="toss-payment__error"
+    >
       <p>{{ error }}</p>
     </div>
-    <div id="toss-widget" class="toss-payment__widget"></div>
-    <div id="toss-agreement" class="toss-payment__agreement"></div>
+    <div
+      id="toss-widget"
+      class="toss-payment__widget"
+    />
+    <div
+      id="toss-agreement"
+      class="toss-payment__agreement"
+    />
     <button
       v-if="widgetReady"
       class="btn btn-primary toss-payment__pay"

@@ -2,7 +2,10 @@
   <div class="toss-cancel">
     <h2>{{ $t('toss.cancel.title') }}</h2>
     <p>{{ $t('toss.cancel.message') }}</p>
-    <router-link class="btn btn-secondary" to="/checkout">
+    <router-link
+      class="btn btn-secondary"
+      to="/checkout"
+    >
       {{ $t('toss.cancel.retry') }}
     </router-link>
   </div>

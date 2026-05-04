@@ -1,11 +1,21 @@
 <template>
   <div class="toss-success">
-    <div v-if="confirming">{{ $t('toss.success.confirming') }}</div>
-    <div v-else-if="error" class="error">{{ error }}</div>
+    <div v-if="confirming">
+      {{ $t('toss.success.confirming') }}
+    </div>
+    <div
+      v-else-if="error"
+      class="error"
+    >
+      {{ error }}
+    </div>
     <div v-else>
       <h2>{{ $t('toss.success.title') }}</h2>
       <p>{{ $t('toss.success.message') }}</p>
-      <router-link class="btn btn-primary" to="/dashboard">
+      <router-link
+        class="btn btn-primary"
+        to="/dashboard"
+      >
         {{ $t('toss.success.dashboard') }}
       </router-link>
     </div>
