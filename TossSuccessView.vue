@@ -41,7 +41,7 @@ onMounted(async () => {
     return;
   }
   try {
-    const resp = await api.post('/api/v1/plugins/toss-payments/payments/confirm', {
+    const resp = await api.post<Response>('/api/v1/plugins/toss-payments/payments/confirm', {
       paymentKey,
       orderId,
       amount: Number(amount),
