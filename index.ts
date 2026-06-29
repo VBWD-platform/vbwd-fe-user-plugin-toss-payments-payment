@@ -4,7 +4,7 @@ import ko from './locales/ko.json';
 
 export const tossPaymentsPlugin: IPlugin = {
   name: 'toss-payments-payment',
-  version: '1.0.0',
+  version: '26.6',
   description: 'Toss Payments (Korea) — widget checkout + cash receipt',
   _active: false,
 
