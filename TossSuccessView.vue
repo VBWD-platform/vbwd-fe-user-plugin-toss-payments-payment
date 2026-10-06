@@ -27,6 +27,9 @@ import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { api } from '@/api';
 
+// Relative to the api client's `/api/v1` baseURL.
+const API_PREFIX = '/plugins/toss-payments';
+
 const route = useRoute();
 const confirming = ref(true);
 const error = ref<string | null>(null);
@@ -41,15 +44,11 @@ onMounted(async () => {
     return;
   }
   try {
-    const resp = await api.post<Response>('/api/v1/plugins/toss-payments/payments/confirm', {
+    await api.post(`${API_PREFIX}/payments/confirm`, {
       paymentKey,
       orderId,
       amount: Number(amount),
     });
-    if (!resp.ok) {
-      const body = await resp.json();
-      error.value = body.error || 'confirm failed';
-    }
   } catch (e) {
     error.value = e instanceof Error ? e.message : 'confirm failed';
   } finally {
